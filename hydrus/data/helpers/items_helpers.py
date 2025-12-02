@@ -177,7 +177,7 @@ def items_delete_members_response(path: str, collection_id_: str, int_list="") -
     """
     collections, parsed_classes = get_collections_and_parsed_classes()
     if path in parsed_classes:
-            abort(405)
+        abort(405)
     if path in collections:
         item_class = collections[path]["collection"]
         class_type = item_class.name

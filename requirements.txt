@@ -14,7 +14,7 @@ hydra_openapi_parser
 psycopg2-binary==2.9.9
 pyld>=2.0.3
 pytest>=6.2.4
-pep8>=1.7.1
+pycodestyle>=2.8.0
 persisting-theory>=0.2.1
 python-engineio==4.2.1
 python-socketio==5.4.0

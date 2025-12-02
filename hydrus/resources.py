@@ -69,7 +69,7 @@ class Vocab(Resource):
         try:
             resource = request.args.getlist("resource")[0]
             return set_response_headers(jsonify(get_fragments(resource)))
-        except:
+        except (IndexError, KeyError):
             return set_response_headers(jsonify(get_doc().generate()))
 
 

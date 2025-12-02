@@ -19,7 +19,7 @@ class ClassNotFound(Exception):
 class InstanceNotFound(Exception):
     """Error when the Instance is not found."""
 
-    def __init__(self, type_: str, id_: Union[str, None]=None) -> None:
+    def __init__(self, type_: str, id_: Union[str, None] = None) -> None:
         """Constructor."""
         self.type_ = type_
         self.id_ = id_
@@ -42,8 +42,8 @@ class MemberInstanceNotFound(Exception):
     def __init__(
         self,
         type_: str,
-        collection_id_: Union[str, None]=None,
-        member_id_: Union[str, None]=None,
+        collection_id_: Union[str, None] = None,
+        member_id_: Union[str, None] = None,
     ) -> None:
         """Constructor."""
         self.type_ = type_
@@ -80,7 +80,7 @@ class PropertyNotFound(Exception):
 class InstanceExists(Exception):
     """Error when the Instance already exists."""
 
-    def __init__(self, type_: str, id_: Union[str, None]=None) -> None:
+    def __init__(self, type_: str, id_: Union[str, None] = None) -> None:
         """Constructor."""
         self.type_ = type_
         self.id_ = id_

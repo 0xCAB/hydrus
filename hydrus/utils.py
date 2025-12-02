@@ -339,7 +339,7 @@ def get_session() -> scoped_session:
 def set_response_headers(
     resp: Response,
     ct: str = "application/ld+json",
-    headers: List[Dict[str, Any]]=[],
+    headers: List[Dict[str, Any]] = [],
     status_code: int = 200,
 ) -> Response:
     """

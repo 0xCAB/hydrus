@@ -247,7 +247,7 @@ def get_collection(
     session: scoped_session,
     paginate: bool,
     page_size: int,
-    search_params: Dict[str, Any]=None,
+    search_params: Dict[str, Any] = None,
     path: str = None,
     collection: bool = False,
 ) -> Dict[str, Any]:

@@ -4,14 +4,14 @@ import os
 from os.path import abspath, dirname, join
 import logging
 
-import pep8
+import pycodestyle
 
 
 def test_pep8():
     """Test method to check PEP8 compliance over the entire project."""
     file_structure = join(dirname(dirname(__file__)), 'hydrus')
     logging.info(f"Testing for PEP8 compliance of python files in {file_structure}")
-    style = pep8.StyleGuide()
+    style = pycodestyle.StyleGuide()
     style.options.max_line_length = 100  # Set this to desired maximum line length
     filenames = []
     # Set this to desired folder location
